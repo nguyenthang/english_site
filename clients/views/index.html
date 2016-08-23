@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="engApp">
+  <head>
+    <meta charset="utf-8">
+    <title>The welcome page</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div ng-include="'views/partials/top.html'"></div>
+      <div ng-include="'views/partials/nav.html'"></div>
+      <div ng-view></div>
+      <div ng-include="'views/partials/footer.html'"></div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="assets/vendor/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/vendor/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="controllers/HomeController.js"></script>
+</html>
